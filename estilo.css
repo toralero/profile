@@ -1,0 +1,91 @@
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+.text-center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 18em;
+}
+
+html *
+{
+
+   font-family: Didact Gothic !important;
+}
+
+.box-shadow {
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.box {
+  margin-top: 68px;
+  width: 520px;
+  height: 900px;
+  padding: 10px;
+  background-color: #f4f6ff;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.holder {
+  position: relative;
+  object-fit: contain;
+}
+.text{
+
+}
+.holder:hover img {
+  opacity: 0.5;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  object-fit: contain;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
